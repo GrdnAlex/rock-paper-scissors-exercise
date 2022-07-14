@@ -5,6 +5,8 @@ print("welcome to rock paper scissors")
 
 # User Inputs
 user_choice = input("Please make a selection 'rock', 'paper', 'scissors'): ")
+user_choice = user_choice.lower()
+
 #You Chose: rock
 print("You chose:", user_choice) 
 
@@ -38,9 +40,8 @@ elif user_choice == "scissors":
         print("Scissors cuts paper. You win!")
     else:
         print("Rock crushes scissors. You lose.")
+
 # Display Results
-
-
 # -------------------
 # Welcome 'Player One' to my Rock-Paper-Scissors game...
 # -------------------
