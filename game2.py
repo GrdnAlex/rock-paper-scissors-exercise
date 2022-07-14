@@ -12,9 +12,7 @@ user_choice = user_choice.lower()
 
 # Validate User Inputs
 
-if user_choice not in valid_options:
-    print("oops invalid try again")
-exit() # quit()
+
 
 # Computer Choice
 
