@@ -10,15 +10,15 @@ print("You chose:", user_choice)
 
 user_choice = user_choice.lower()
 
-# Validate User Inputs
-
-
-
-# Computer Choice
-
+# Validate User Inputs & Computer Choice
 valid_options = ["rock", "paper", "scissors"]
 computer_choice = random.choice(valid_options)
-print("computer_choice:", computer_choice)
+if user_choice not in valid_options:
+    print("oops invalid try again")
+    exit() # quit()
+else:
+    print("computer_choice:", computer_choice)
+
 
 # Determine The Winner
 if user_choice == computer_choice:
