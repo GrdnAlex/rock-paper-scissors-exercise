@@ -1,4 +1,4 @@
-
+import random
 
 print("welcome to rock paper scissors")
 
@@ -12,7 +12,15 @@ user_choice = user_choice.lower()
 
 # Validate User Inputs
 
+if user_choice not in valid_options:
+    print("oops invalid try again")
+exit() # quit()
+
 # Computer Choice
+
+valid_options = ["rock", "paper", "scissors"]
+computer_choice = random.choice(valid_options)
+print("computer_choice:", computer_choice)
 
 # Determine The Winner
 
